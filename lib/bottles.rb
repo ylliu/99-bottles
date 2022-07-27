@@ -23,4 +23,8 @@ class Bottles
         "#{number - 1} bottles of beer on the wall.\n"
     end
   end
+
+  def verses(starting, ending)
+    starting.downto(ending).collect { |i| verse(i) }.join("\n")
+  end
 end
