@@ -11,11 +11,6 @@ class Bottles
         "1 bottle of beer.\n" +
         "Take it down and pass it around, " +
         "no more bottles of beer on the wall.\n"
-    when 2
-      "#{number} bottles of beer on the wall," +
-        "#{number} bottles of beer.\n" +
-        "Take one down and pass it around, " +
-        "#{number - 1} #{container(number - 1)} of beer on the wall.\n"
     when 6
       "1 six-pack of beer on the wall," +
         "1 six-pack of beer.\n" +
@@ -35,7 +30,7 @@ class Bottles
 
   private
 
-  def container(number = :FIXME)
+  def container(number)
     if number == 1
       "bottle"
     else
