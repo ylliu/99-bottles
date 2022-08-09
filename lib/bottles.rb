@@ -85,3 +85,6 @@ class BottleNumber6 < BottleNumber
     "six-pack"
   end
 end
+
+# https://github.com/sandimetz/1st_99bottles_ruby
+# chapter 6
